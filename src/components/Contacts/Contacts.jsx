@@ -24,10 +24,10 @@ export default Contacts;
 Contacts.propTypes = {
   data: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string,
-      name: PropTypes.string,
-      number: PropTypes.string,
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      number: PropTypes.string.isRequired,
     })
   ),
-  onRemoveContact: PropTypes.func,
+  onRemoveContact: PropTypes.func.isRequired,
 };
